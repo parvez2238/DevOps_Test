@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Stylish Blog Page</title>
+    <link rel="stylesheet" href="styles_blog.css"> <!-- Link to an external CSS file -->
+</head>
+<body>
+    <!-- Blog 1 -->
+<div class="blog">
+    <img src="blog1.jpg" alt="Blog 1 Image">
+    <h2>Meeting My Girlfriend for the First Time</h2>
+    <p>It was a moment I had been eagerly waiting for – the day I would finally meet my girlfriend in person. Our story is a bit unique. We attended the same school, but fate had a different plan for us. I left our school before we ever had a chance to cross paths.</p>
+    <p>Years went by, and we lost touch. However, destiny had a way of bringing us back together. When I saw her for the first time since leaving school, I was completely mesmerized. She was not only incredibly pretty and cute, but her intelligence shone through as well.</p>
+    <p>As we sat down to talk, it felt like we had known each other forever. The conversation flowed effortlessly, and I couldn't help but feel grateful for the unexpected twist in our journey. Meeting her was like a dream come true, and I knew right then that this was the beginning of something beautiful.</p>
+</div>
+
+        <!-- Blog 2 -->
+        <div class="blog">
+            <img src="blog2.jpg" alt="Blog 2 Image">
+            <h2>Blog Title 2</h2>
+            <p>This is the content of Blog 2. It can include some text, images, and more.</p>
+        </div>
+        <!-- Blog 3 -->
+        <div class="blog">
+            <img src="blog3.jpg" alt="Blog 3 Image">
+            <h2>Blog Title 3</h2>
+            <p>This is the content of Blog 3. It can include some text, images, and more.</p>
+        </div>
+        <!-- Blog 4 -->
+        <div class="blog">
+            <img src="blog4.jpg" alt="Blog 4 Image">
+            <h2>Blog Title 4</h2>
+            <p>This is the content of Blog 4. It can include some text, images, and more.</p>
+        </div>
+        <!-- Blog 5 -->
+        <div class="blog">
+            <img src="blog5.jpg" alt="Blog 5 Image">
+            <h2>Blog Title 5</h2>
+            <p>This is the content of Blog 5. It can include some text, images, and more.</p>
+        </div>
+        <!-- Button to add more blogs -->
+        <button class="add-button" onclick="addBlog()">Add Blog</button>
+    </div>
+
+    <script>
+        // JavaScript function to add a new blog
+        function addBlog() {
+            const container = document.querySelector('.container');
+            const newBlog = document.createElement('div');
+            newBlog.className = 'blog';
+            newBlog.innerHTML = `
+                <img src="placeholder.jpg" alt="New Blog Image">
+                <h2>New Blog Title</h2>
+                <p>This is the content of the new blog. You can customize it as needed.</p>
+            `;
+            container.insertBefore(newBlog, document.querySelector('.add-button'));
+        }
+    </script>
+</body>
+</html>
+
